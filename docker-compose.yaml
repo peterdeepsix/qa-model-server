@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  tensorflow-serving:
+    image: 'tensorflow/serving'
+    ports:
+      - '8500:8500'
+      - '8501:8501'
+    volumes:
+      - type: bind
+        source: .models/distilbert-base-cased-distilled-squad/
+        target: /models/cased/1
+    environment:
+      MODEL_NAME: cased
