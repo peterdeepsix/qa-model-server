@@ -24,6 +24,7 @@ steps:
     - '--memory=2Gi'
     env:
     - 'PORT=8501'
+    - 'MODEL_NAME=cased'
 images:
 - gcr.io/$PROJECT_ID/qa-model-server
 
