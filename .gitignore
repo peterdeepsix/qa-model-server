@@ -3,3 +3,4 @@ node_modules
 .models/distilbert-base-cased-distilled-squad/vocab.txt
 .models/distilbert-base-cased-distilled-squad/variables/variables.data-00000-of-00001
 .models/distilbert-base-cased-distilled-squad/variables/variables.index
+docker-key.json

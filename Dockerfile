@@ -6,4 +6,4 @@ ENV PORT 8501
 ENV HOST 0.0.0.0
 
 # Copy the local code to the container
-COPY . .
+COPY .models/distilbert-cased/ /models/cased/1
