@@ -29,4 +29,4 @@ images:
 - gcr.io/$PROJECT_ID/qa-model-server
 
 substitutions:
-  _EXPORT_BUCKET: gs://qa-models/distilbert-base-cased-distilled-squad
+  _EXPORT_BUCKET: gs://qa-models
