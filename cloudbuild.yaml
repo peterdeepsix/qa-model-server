@@ -1,7 +1,7 @@
 steps:
   # Build the container image
   - name: 'gcr.io/cloud-builders/gsutil'
-    args: [ 'cp', '-r', '${_EXPORT_BUCKET}', '.' ]
+    args: [ 'cp', '-r', '${_EXPORT_BUCKET}', '.models' ]
   # Build the container image
   - name: 'gcr.io/cloud-builders/docker'
     args: ['build', '-t', 'gcr.io/$PROJECT_ID/qa-model-server:$COMMIT_SHA', '.']
