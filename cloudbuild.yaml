@@ -21,8 +21,7 @@ steps:
     - '--allow-unauthenticated'
     - '--platform'
     - 'managed'
-    - 'memory=2Gi'
-    - 'port=8501'
+    - '--memory=2Gi'
     env:
     - 'PORT=8501'
 images:
